@@ -23,18 +23,20 @@ namespace PedidosRestaurante
             return custoTotal;
         }
 
-        public void ImprimePedido()
+        public override string ToString()
         {
 
-            Console.WriteLine("*************** Pedido ***************");
+            decimal valorTotal = calculaCustoPedido();
+            string notaPedido = "";
+            notaPedido += "*************** Pedido ***************\n";
             foreach (ItemPedido pedido in pedidos)
             {
-                Console.WriteLine(pedido);
+                notaPedido += $"{pedido}\n";
             }
-            Console.WriteLine();
-            Console.WriteLine($"Valor total do pedido: R${calculaCustoPedido():F2}");
-            Console.WriteLine("**************************************");
+            notaPedido += $"\nValor total do pedido: R${valorTotal:F2}";
+            notaPedido += "\n**************************************";
 
+            return notaPedido;
         }
     }
 }

@@ -32,7 +32,7 @@ namespace PedidosRestaurante
             } while (registrarPedido == 'S');
   
             Console.WriteLine();
-            pedido.ImprimePedido();
+            Console.WriteLine(pedido);
         }
     }
 }
