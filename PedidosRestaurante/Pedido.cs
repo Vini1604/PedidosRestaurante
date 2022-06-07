@@ -6,11 +6,11 @@ namespace PedidosRestaurante
 {
     class Pedido
     {
-        private List<ItemPedido> ItensPedido { get; set; } = new List<ItemPedido>();
+        private List<ItemPedido> ItensPedido { get; set; }
 
         public Pedido()
         {
-
+            ItensPedido = new List<ItemPedido>();
         }
         public void AdicionarItemPedido(ItemPedido pedido)
         {
@@ -25,18 +25,6 @@ namespace PedidosRestaurante
             }
             return custoPedido;
         }
-
-        /*
-        private decimal CalculaCustoTotal()
-        {
-            decimal custoTotal = 0;
-            foreach (Pedido pedido in Pedidos)
-            {
-                custoTotal += CalculaCustoPedido();
-            }
-            return custoTotal;
-        }
-        */
 
         public override string ToString()
         {
