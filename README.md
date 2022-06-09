@@ -22,7 +22,9 @@ O sistema deve ser o seguinte menu:
    3.1 - AVISTA
    3.2 - PARCELADO, PEDIR AO GARÇON A QUANTIDADE DE X
    9 - SAIR
-5 - Relatório dos pedidos criados // Formato do pedido
+5 - Relatório dos pedidos criados 
+
+                                     Formato do pedido
                                      Pedido 99 Cliente: XXXXXXXXXXXXXXXXXXXXXXX Valor total: 999.999.999,99 Data do pedido DD/MM/YYYY HH:MM:SS 
                                      Forma de pagamento: Avista
                                      Itens
