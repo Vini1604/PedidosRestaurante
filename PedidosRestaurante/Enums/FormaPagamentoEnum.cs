@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PedidosRestaurante
+namespace PedidosRestaurante.Enums
 {
     enum FormaPagamentoEnum : int
     {
