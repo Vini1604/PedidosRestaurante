@@ -19,7 +19,7 @@ namespace PedidosRestaurante
 
         public override string ToString()
         {
-            return $"Item: {Descricao}, Valor Unitario: R${ValorUnitario:F2}, Quantidade: {Quantidade}";
+            return $"Descricao: {Descricao}, Valor Unitario: R${ValorUnitario:F2},Quantidade: {Quantidade}";
         }
     }
 }
